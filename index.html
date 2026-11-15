@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Casa</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;height:100%;overflow:hidden;background:#050d08}
+#st{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:0 0;color:#eef3e6;font-family:Inter,system-ui,sans-serif;overflow:hidden;background:#050d08}
+.bl{position:absolute;border-radius:50%;animation:dr 60s ease-in-out infinite alternate}
+.b1{left:-200px;top:-100px;width:1300px;height:1000px;background:radial-gradient(closest-side,#1f4a24,transparent)}
+.b2{right:-250px;bottom:-250px;width:1200px;height:1000px;background:radial-gradient(closest-side,#17381c,transparent);animation-duration:80s}
+.b3{left:900px;top:-300px;width:800px;height:600px;background:radial-gradient(closest-side,#274d1f,transparent);animation-duration:70s}
+@keyframes dr{to{transform:translate(120px,80px) scale(1.15)}}
+.g{position:absolute;border-radius:53px;background:linear-gradient(150deg,rgba(255,255,255,.11),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.13);box-shadow:inset 0 2px 0 rgba(255,255,255,.25);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+.l{font-size:27px;color:rgba(238,243,230,.55)}
+.a{color:#cfe86a}
+.pill{display:inline-block;font-size:26px;padding:7px 24px;border-radius:99px;background:rgba(207,232,106,.16);color:#cfe86a}
+.pl{top:38px;height:67px;padding:14px 34px;border-radius:99px;font-size:29px}
+.mc{top:605px;width:230px;height:360px;text-align:center;padding-top:29px}
+.mc .v{font-size:48px;font-weight:300}
+.sb{display:flex;flex-direction:column;align-items:center;justify-content:space-around;padding:19px 0}
+.sb i{font-size:48px;width:86px;height:86px;display:flex;align-items:center;justify-content:center;border-radius:50%;color:rgba(238,243,230,.6)}
+.sb i.on{background:#cfe86a;color:#17240b}
+#md iframe{width:100%;height:100%;border:0}
+#ov{position:absolute;left:0;top:0;width:100%;height:100%;background:#000;opacity:0;transition:opacity 3s;pointer-events:none}
+.n #ov{opacity:.65}
+</style></head>
+<body>
+<div id="st">
+<div class="bl b1"></div><div class="bl b2"></div><div class="bl b3"></div>
+<svg style="position:absolute;left:0;top:0;opacity:.3" width="1920" height="1080" fill="none" stroke="#7fb05a" stroke-width="1.5"><path d="M0 790C340 720 530 910 860 820S1440 600 1920 720"/><path d="M0 840C340 770 530 960 860 870S1440 650 1920 770"/><path d="M0 290C380 190 720 380 1100 260S1630 140 1920 215"/><path d="M0 340C380 240 720 430 1100 310S1630 190 1920 265"/></svg>
+
+<div class="g sb" style="left:48px;top:178px;width:115px;height:600px;border-radius:62px">
+<i class="ti ti-home on"></i><i class="ti ti-brand-youtube" id="iy"></i><i class="ti ti-brand-netflix"></i><i class="ti ti-brand-spotify" id="is"></i><i class="ti ti-device-tv"></i></div>
+
+<div class="g pl" style="right:300px"><span id="su"></span></div>
+<div class="g pl" id="ep" style="right:72px;display:none"><span class="l" style="font-size:29px">EUR</span> <span id="eu"></span></div>
+
+<div id="hi" class="l" style="position:absolute;left:250px;top:182px;font-size:38px"></div>
+<div id="clk" style="position:absolute;left:230px;top:230px;font-size:283px;font-weight:100;line-height:.85;letter-spacing:-.04em"></div>
+<div id="dt" style="position:absolute;left:250px;top:508px;font-size:43px;font-weight:300"></div>
+
+<div class="g" style="left:250px;top:614px;width:792px;height:336px;padding:34px 38px">
+<div style="display:flex;justify-content:space-between;align-items:center"><span class="l" id="cy"></span><span class="pill" id="rn">…</span></div>
+<div style="display:flex;align-items:baseline;gap:19px;margin-top:10px"><span id="tp" style="font-size:96px;font-weight:200">–°</span><span id="wd" class="l" style="font-size:31px"></span></div>
+<svg width="716" height="90" viewBox="0 0 700 90" style="margin-top:8px"><defs><linearGradient id="sg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe86a" stop-opacity=".35"/><stop offset="1" stop-color="#cfe86a" stop-opacity="0"/></linearGradient></defs><path id="sf" fill="url(#sg)"/><path id="sl" fill="none" stroke="#cfe86a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+
+<div class="g" id="mc" style="left:1128px;top:154px;width:725px;height:422px;padding:14px"><div id="md" style="width:100%;height:100%;border-radius:41px;overflow:hidden;background:#0a140b"></div></div>
+
+<div class="g mc" style="left:1128px"><div class="l">Crăciun</div>
+<svg width="154" height="154" viewBox="0 0 64 64" style="margin:24px 0 10px"><circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="6"/><circle id="xr" cx="32" cy="32" r="26" fill="none" stroke="#cfe86a" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 163.4" transform="rotate(-90 32 32)"/></svg>
+<div class="v"><span id="xn"></span> <span class="l">zile</span></div></div>
+
+<div class="g mc" id="cc" style="left:1378px"><div class="l" id="cl">Concediu</div>
+<svg width="154" height="154" viewBox="0 0 64 64" style="margin:24px 0 10px"><circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="6"/><circle id="cr" cx="32" cy="32" r="26" fill="none" stroke="#6fae6a" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 163.4" transform="rotate(-90 32 32)"/></svg>
+<div class="v"><span id="cn"></span> <span class="l">zile</span></div></div>
+
+<div class="g mc" style="left:1627px"><div class="l">Aer</div>
+<svg width="154" height="154" viewBox="0 0 64 64" style="margin:24px 0 0"><path d="M8 46A24 24 0 0 1 56 46" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="6" stroke-linecap="round"/><path id="ar" d="M8 46A24 24 0 0 1 56 46" fill="none" stroke="#cfe86a" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 80"/></svg>
+<div class="v" style="margin-top:-14px"><span id="an">–</span> <span class="a l" id="al"></span></div></div>
+
+<div id="ov"></div>
+</div>
+
+<script>
+const CFG={
+  oras:"București", lat:44.4268, lon:26.1025,
+  media:"youtube",   // "youtube", "spotify" sau "nimic"
+  youtube:"https://www.youtube.com/watch?v=jfKfPfyJRdk",
+  spotify:"https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M",
+  concediu:{nume:"", data:""},   // ex: {nume:"Vacanță la mare", data:"2027-07-12"}
+  noapte:[23,6]
+};
+const $=id=>document.getElementById(id), p2=n=>('0'+n).slice(-2), cap=s=>s[0].toUpperCase()+s.slice(1);
+const ZI=['duminică','luni','marți','miercuri','joi','vineri','sâmbătă'];
+const LU=['ianuarie','februarie','martie','aprilie','mai','iunie','iulie','august','septembrie','octombrie','noiembrie','decembrie'];
+const WM={0:'Senin',1:'Mai mult senin',2:'Parțial noros',3:'Înnorat',45:'Ceață',48:'Ceață',51:'Burniță',53:'Burniță',55:'Burniță',61:'Ploaie slabă',63:'Ploaie',65:'Ploaie puternică',71:'Ninsoare slabă',73:'Ninsoare',75:'Ninsoare puternică',80:'Averse',81:'Averse',82:'Averse puternice',95:'Furtună',96:'Furtună',99:'Furtună'};
+const wd=c=>WM[c]||(c<4?'Înnorat':c<50?'Ceață':c<70?'Ploaie':c<80?'Ninsoare':c<90?'Averse':'Furtună');
+
+function fit(){$('st').style.transform='scale('+Math.min(innerWidth/1920,innerHeight/1080)+')'}
+function ring(id,f){f=Math.max(.03,Math.min(1,f));$(id).setAttribute('stroke-dasharray',(f*163.4)+' 163.4')}
+function days(to){const t=new Date();t.setHours(0,0,0,0);return Math.round((to-t)/864e5)}
+
+function tick(){const d=new Date(),h=d.getHours();
+  $('clk').textContent=p2(h)+':'+p2(d.getMinutes());
+  $('hi').textContent=h<5?'Noapte bună':h<12?'Bună dimineața':h<18?'Bună ziua':'Bună seara';
+  $('dt').innerHTML=cap(ZI[d.getDay()])+', <span class="a">'+d.getDate()+' '+LU[d.getMonth()]+'</span>';
+  document.body.classList.toggle('n',h>=CFG.noapte[0]||h<CFG.noapte[1]);}
+
+function daily(){const y=new Date().getFullYear();let x=new Date(y,11,25);if(days(x)<0)x=new Date(y+1,11,25);
+  const c=days(x);$('xn').textContent=c;ring('xr',1-c/60);
+  const v=CFG.concediu;let ok=false;
+  if(v&&v.data){const dd=days(new Date(v.data+'T00:00:00'));if(dd>=0){ok=true;$('cn').textContent=dd;$('cl').textContent=v.nume||'Concediu';ring('cr',1-dd/365)}}
+  $('cc').style.display=ok?'block':'none';}
+
+async function weather(){try{
+  const j=await(await fetch('https://api.open-meteo.com/v1/forecast?latitude='+CFG.lat+'&longitude='+CFG.lon+'&current=temperature_2m,apparent_temperature,weather_code&hourly=temperature_2m,precipitation_probability&daily=sunrise,sunset&timezone=auto&forecast_days=2')).json(),c=j.current;
+  $('cy').textContent=CFG.oras;$('tp').textContent=Math.round(c.temperature_2m)+'°';
+  $('wd').textContent=wd(c.weather_code)+' · se simte '+Math.round(c.apparent_temperature)+'°';
+  let s=j.hourly.time.findIndex(t=>new Date(t).getTime()>Date.now());if(s<0)s=0;
+  const T=j.hourly.temperature_2m.slice(s,s+12),P=j.hourly.precipitation_probability.slice(s,s+12);
+  let mx=0,at=0;P.forEach((v,i)=>{if(v>mx){mx=v;at=i}});
+  $('rn').textContent=mx>=50?'Ploaie pe la '+p2(new Date(j.hourly.time[s+at]).getHours())+':00':'Fără ploaie în curând';
+  const lo=Math.min.apply(null,T),hi=Math.max.apply(null,T);
+  const pts=T.map((v,i)=>(i*700/(T.length-1)).toFixed(0)+' '+(82-(v-lo)/((hi-lo)||1)*66).toFixed(0));
+  const dl='M'+pts.join('L');$('sl').setAttribute('d',dl);$('sf').setAttribute('d',dl+'L700 90L0 90Z');
+  $('su').textContent=j.daily.sunrise[0].slice(11,16)+'  ·  '+j.daily.sunset[0].slice(11,16);
+}catch(e){$('wd').textContent='Vremea nu e disponibilă'}}
+
+async function air(){try{
+  const j=await(await fetch('https://air-quality-api.open-meteo.com/v1/air-quality?latitude='+CFG.lat+'&longitude='+CFG.lon+'&current=european_aqi')).json();
+  const v=Math.round(j.current.european_aqi);$('an').textContent=v;
+  $('al').textContent=v<=20?'Bun':v<=40?'Acceptabil':v<=60?'Moderat':v<=80?'Slab':v<=100?'Foarte slab':'Extrem';
+  $('ar').setAttribute('stroke-dasharray',(Math.min(v,100)/100*75.4)+' 80');
+}catch(e){}}
+
+async function fx(){try{
+  const j=await(await fetch('https://api.frankfurter.dev/v1/latest?base=EUR&symbols=RON')).json();
+  $('eu').textContent=j.rates.RON.toFixed(2).replace('.',',')+' lei';$('ep').style.display='block';
+}catch(e){}}
+
+function media(){const m=$('md'),u=CFG.youtube,id=(u.match(/(?:v=|youtu\.be\/|live\/|embed\/)([\w-]{11})/)||[0,u])[1];
+  if(CFG.media==='youtube'){$('iy').className+=' on';m.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?autoplay=1&mute=1&loop=1&playlist='+id+'&controls=0&rel=0&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>'}
+  else if(CFG.media==='spotify'){$('is').className+=' on';m.innerHTML='<iframe src="https://open.spotify.com/embed/'+CFG.spotify.replace(/^https?:\/\/open\.spotify\.com\//,'').split('?')[0]+'?theme=0" allow="autoplay; encrypted-media"></iframe>'}
+  else $('mc').style.display='none';}
+
+fit();addEventListener('resize',fit);
+tick();daily();weather();air();fx();media();
+setInterval(tick,10000);setInterval(daily,60000);setInterval(weather,900000);setInterval(air,1800000);setInterval(fx,6*3600000);
+setInterval(()=>{$('st').style.left=(Math.random()*10-5)+'px';$('st').style.top=(Math.random()*10-5)+'px'},120000);
+setInterval(()=>{const d=new Date();if(d.getHours()===4&&d.getMinutes()===0)location.reload()},60000);
+</script>
+</body></html>
